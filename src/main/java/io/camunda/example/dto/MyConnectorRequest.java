@@ -7,5 +7,5 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 public record MyConnectorRequest(
-    @NotEmpty @TemplateProperty(group = "compose", type = PropertyType.Text) String message,
+    @NotEmpty @TemplateProperty(group = "compose", type = PropertyType.Text , label = "nom") String message ,
     @Valid @NotNull Authentication authentication) {}

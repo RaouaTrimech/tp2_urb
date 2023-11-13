@@ -12,8 +12,8 @@ import org.slf4j.LoggerFactory;
 
 @OutboundConnector(
     name = "MYCONNECTOR",
-    inputVariables = {"authentication", "message"},
-    type = "io.camunda:template:1")
+    inputVariables = {"nom"},
+    type = "hello")
 @ElementTemplate(
     id = "io.camunda.connector.Template.v1",
     name = "Template connector",
